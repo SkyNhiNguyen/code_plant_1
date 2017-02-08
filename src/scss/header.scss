@@ -1,0 +1,128 @@
+@import "header_hamburger";
+@import "header_search";
+
+header {
+  z-index: 10;
+  width: 100%;
+  position: relative;
+  padding: 0.5rem $gutter;
+  background: rgba(0, 0, 0, 1);
+}
+
+.mainnav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-flow: row wrap;
+
+  li a {
+    font-family: $book;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    padding: 10px 0.5rem 7px;
+  }
+
+  li a:hover,
+  li a.active {
+    color: $yellow;
+  }
+
+  li a:hover {
+    border-top: 1.5px solid #fff;
+    border-bottom: 1.5px solid #fff;
+  }
+
+  .logo_2 a:hover {
+    border: none;
+  }
+
+  .logo_2 a {
+    padding: 0;
+  }
+}
+
+.logo_1,
+.logo_2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  img {
+    width: 5rem;
+    margin: auto;
+  }
+}
+
+.logo_1 {
+  order: 2;
+}
+
+.logo_2 {
+  display: none;
+}
+
+.hamburger {
+  order: 3;
+}
+
+.mainnav-tab {
+  display: none;
+  width: 100%;
+  text-align: center;
+  order: 3;
+  margin: 2rem 0;
+
+  li {
+    margin: 1.5rem 0;
+  }
+}
+
+.hamburger {
+  padding: 0;
+  text-align: right;
+}
+
+@media screen and (min-width: $max-1-width) {
+  header {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+  }
+
+  .mainnav-tab {
+    display: flex;
+    position: relative;
+    width: 700px;
+    margin: 0 auto;
+    justify-content: center;
+
+    li {
+      margin: 0.25rem 1.15rem;
+      align-self: flex-end;
+    }
+  }
+
+  .logo_1 {
+    display: none;
+  }
+
+  .logo_2 {
+    display: flex;
+
+    img {
+      width: 7rem;
+    }
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .search {
+    position: absolute;
+    top: 1rem;
+    right: -1.5rem;
+  }
+}

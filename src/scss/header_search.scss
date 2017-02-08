@@ -1,0 +1,44 @@
+.search {
+  display: flex;
+  margin: auto;
+  width: 10rem;
+  position: relative;
+  align-items: center;
+
+  &-input {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    color: #fff;
+    padding: 0.25rem 1rem;
+    border-radius: 10px;
+  }
+
+  a {
+    position: absolute;
+    right: 1rem;
+  }
+
+  i {
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: $max-1-width) {
+  .search {
+    &-input {
+      padding: 1px 1rem 3px;
+      border-radius: 10px;
+    }
+
+    a {
+      position: absolute;
+      right: 1rem;
+      top: -2px;
+    }
+
+    i {
+      color: #fff;
+      font-size: 0.75rem;
+    }
+  }
+}

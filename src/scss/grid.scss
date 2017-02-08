@@ -1,0 +1,21 @@
+.content {
+  padding: 2.5rem 1.5rem;
+}
+
+@media screen and (min-width: $max-1-width) {
+  .content {
+    padding: 8% $gutter-med 0;
+  }
+}
+
+@media screen and (min-width: $max-2-width) {
+  .content {
+    padding: 7% $gutter-big 0;
+  }
+}
+
+@media screen and (min-width: $max-3-width) {
+  .content {
+    padding: 6% $gutter-xl 0;
+  }
+}

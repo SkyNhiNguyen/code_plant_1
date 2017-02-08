@@ -1,0 +1,25 @@
+.cta {
+  font-family: $book-bold;
+  letter-spacing: 1px;
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  padding: 0.7rem 0.5rem 0.5rem;
+  margin: 1rem;
+}
+
+.cta:hover {
+  background: #fff;
+  color: #000;
+  transition: color 1s;
+}
+
+@media screen and (min-width: $max-1-width) {
+  .cta {
+    font-size: 1.25rem;
+    padding: 0.7rem 1rem 0.5rem;
+    margin: 1rem;
+    border: 3px solid #fff;
+  }
+}

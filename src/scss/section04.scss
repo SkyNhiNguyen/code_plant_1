@@ -1,0 +1,66 @@
+.gallery-carousel {
+  margin-top: 3rem;
+  position: relative;
+
+  .slick-name {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: 1;
+    font-family: $book-bold-condense;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0.75rem 0 0.3rem;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+  }
+
+  .gallery-slick {
+    position: relative;
+    width: 80%;
+    margin: auto;
+
+    img {
+      width: 100%;
+    }
+
+    .text {
+      position: absolute;
+      bottom: 0;
+      right: 1rem;
+      color: #fff;
+      font-family: $book;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+    }
+  }
+}
+
+.gallery-carousel:last-of-type {
+  padding-bottom: 3rem;
+}
+
+@media screen and (min-width: $max-1-width) {
+  .gallery-carousel {
+    .slick-name {
+      font-size: 2.5rem;
+    }
+
+    .gallery-slick {
+      .text {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $max-2-width) {
+  .gallery-carousel {
+    .gallery-slick {
+      width: 1000px;
+    }
+  }
+}

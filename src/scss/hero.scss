@@ -1,0 +1,47 @@
+.hero {
+  position: relative;
+  padding: 0;
+
+  &-content {
+    position: absolute;
+    top: 40%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    text-align: center;
+    z-index: 1;
+    width: 80%;
+
+    h1 {
+      font-family: $book-bold;
+      font-size: 2rem;
+      color: #fff;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: $max-1-width) {
+  .hero {
+    &-content {
+      top: 55%;
+      width: 100%;
+
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 2.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $max-2-width) {
+  .hero {
+    &-content {
+      h1 {
+        font-size: 4rem;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}

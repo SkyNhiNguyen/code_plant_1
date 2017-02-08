@@ -1,0 +1,75 @@
+.news-content {
+  display: flex;
+  flex-flow: column;
+  margin: 3rem 0;
+}
+
+.news-col1 {
+  padding: 2rem 0;
+  border-top: 1px solid $gray;
+
+  img {
+    width: 100%;
+  }
+}
+
+.news-col2 {
+  h3 {
+    font-family: $book-bold-condense;
+    color: $green;
+  }
+
+  h4 {
+    font-family: $book;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+    line-height: 1rem;
+  }
+
+  a {
+    font-family: $book;
+    font-size: 0.85rem;
+    color: $yellow;
+    text-decoration: underline;
+  }
+}
+
+.post {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 0 3rem;
+
+  a {
+    padding: 8px 30px 5px;
+    color: #fff;
+    font-size: 1rem;
+    font-family: $book;
+    text-transform: uppercase;
+    background-color: #000;
+    border-radius: 7px;
+  }
+
+  a:hover {
+    background: none;
+    color: #000;
+    transition: background 1s;
+  }
+}
+
+@media screen and (min-width: $max-1-width) {
+  .news-content {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
+
+  .news-col1 {
+    width: 40%;
+    margin-right: 2rem;
+  }
+
+  .news-col2 {
+    width: 60%;
+  }
+}

@@ -1,0 +1,57 @@
+.content01 {
+  padding: 1rem 1.5rem 2.5rem;
+
+  h3 {
+    font-family: $book-medium;
+    font-weight: lighter;
+    color: $green;
+    font-size: 1.5rem;
+  }
+}
+
+.line {
+  border-bottom: 1px solid $gray;
+  width: 100%;
+  margin: 0.25rem -30% 1rem;
+}
+
+@media screen and (min-width: $max-1-width) {
+  .content01 {
+    padding: 2% $gutter-med 5%;
+
+    h3 {
+      color: $green;
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+      line-height: 1.5rem;
+    }
+  }
+
+  .line {
+    width: 200%;
+    margin: 0.25rem -100% 1rem;
+  }
+}
+
+@media screen and (min-width: $max-2-width) {
+  .content01 {
+    padding: 2% $gutter-big 5%;
+
+    h3 {
+      font-size: 2.25rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6rem;
+    }
+  }
+
+  .line {
+    width: 200%;
+    margin: 0.25rem -100% 1rem;
+  }
+}

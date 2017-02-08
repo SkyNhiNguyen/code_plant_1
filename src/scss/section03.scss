@@ -1,0 +1,226 @@
+.content-2 {
+  padding: 2.5rem 1.5rem;
+}
+
+.subnav {
+  margin: 3rem auto 1rem;
+
+  .tabs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+
+    li {
+      background: #fff;
+      border-radius: 10px;
+      margin: 0.75rem;
+      padding: 0.5rem 1rem 0.3rem;
+    }
+
+    a {
+      color: $green;
+      font-family: $book-medium;
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+
+    li:hover {
+      background: $green;
+      transition: background 0.5s;
+
+      a {
+        color: #fff;
+        transition: color 1s;
+      }
+    }
+  }
+}
+
+.menu-tab {
+  border: 1px solid $gray;
+  padding: 0 0 2rem;
+  margin-bottom: 3rem;
+}
+
+.menu-table {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+.menu-cell {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  text-align: left;
+
+  h4 {
+    font-family: $demi-condense;
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.75rem;
+    font-style: italic;
+  }
+
+  li {
+    margin: 1rem;
+  }
+}
+
+.menu-category {
+  margin: -1rem auto 2rem;
+  width: 15rem;
+
+  h3 {
+    color: $green;
+    font-family: $demi-condense;
+    text-transform: uppercase;
+    font-size: 2rem;
+    background: #f6f5f0;
+    text-align: center;
+  }
+}
+
+.menu-cell {
+  .ice-cream li {
+    margin: 0;
+
+    p {
+      font-family: $book-medium-condense;
+      font-weight: lighter;
+      margin-left: 3rem;
+      font-size: 0.85rem;
+      line-height: 1rem;
+      font-style: normal;
+    }
+  }
+}
+
+#liquids {
+  display: flex;
+  flex-flow: column;
+}
+
+.menu-table-liquid {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  margin-bottom: 3rem;
+}
+
+.menu-cell-liquid {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+
+  h4 {
+    font-family: $demi-condense;
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.75rem;
+    font-style: italic;
+  }
+
+  ul {
+    margin-bottom: 2rem;
+  }
+
+  li {
+    margin: 1rem;
+  }
+
+  h5 {
+    font-size: 1.5em;
+    font-family: $book;
+    font-weight: lighter;
+    padding: 1rem 0;
+  }
+}
+
+.sustainable {
+  p {
+    font-size: 0.65rem;
+    font-style: italic;
+    margin: 1rem;
+    text-align: center;
+  }
+}
+
+.quote {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  p {
+    width: calc(100% - 7rem);
+    font-size: 0.65rem;
+    font-style: italic;
+  }
+}
+
+.print {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 0 3rem;
+
+  a {
+    padding: 8px 30px 5px;
+    color: #fff;
+    font-size: 1rem;
+    font-family: $book;
+    text-transform: uppercase;
+    background-color: #000;
+    border-radius: 7px;
+  }
+
+  a:hover {
+    background: none;
+    color: #000;
+    transition: background 1s;
+  }
+}
+
+@media screen and (min-width: $max-1-width) {
+  .content-2 {
+    padding: 8% $gutter-med 0;
+  }
+
+  .menu-table {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+
+  .menu-cell {
+    width: calc(50% - 1rem);
+    margin: 0 1rem;
+  }
+
+  #liquids {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: $max-2-width) {
+  .content-2 {
+    width: 1000px;
+    padding: 0;
+    margin: auto;
+  }
+}

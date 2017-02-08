@@ -1,0 +1,75 @@
+.newsletter {
+  background-color: #4aaaa5;
+  padding: 3% 10%;
+  display: flex;
+  justify-content: center;
+
+  &-content {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    width: 100%;
+  }
+
+  &-content p {
+    margin: 1rem;
+    padding: 0;
+    font-family: $book-medium;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  &-email {
+    position: relative;
+    width: 60%;
+  }
+
+  &-input {
+    width: 100%;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    border: none;
+  }
+
+  i {
+    position: absolute;
+    right: 1rem;
+    top: 0.4rem;
+  }
+
+  a {
+    margin: 1rem;
+    padding: 8px 30px 5px;
+    color: #fff;
+    font-size: 1rem;
+    font-family: $book;
+    text-transform: uppercase;
+    background-color: #000;
+    border-radius: 7px;
+  }
+
+  a:hover {
+    background: none;
+    color: #000;
+    transition: background 1s;
+  }
+}
+
+@media screen and (min-width: $max-1-width) {
+  .newsletter {
+    &-content {
+      flex-flow: row nowrap;
+      width: 100%;
+      justify-content: center;
+
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    &-email {
+      width: 40%;
+      margin: 1rem;
+    }
+  }
+}

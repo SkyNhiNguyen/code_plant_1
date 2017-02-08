@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$gutter: 1.5rem;
+$gutter-big: 25%;
+$gutter-med: 10%;
+$gutter-xl: 30%;
+
+/* Media Queries */
+$max-1-width: 800px;
+$max-2-width: 1300px;
+$max-3-width: 1500px;
+
+// Font
+$book:'ITCAvantGardeStd-Bk',Avant Garde, Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+$book-medium: 'ITCAvantGardeStd-Md',Avant Garde, Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+$book-bold: 'ITCAvantGardeStd-Bold',Avant Garde, Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+$book-bold-condense: 'ITCAvantGardeStd-BoldCn',Avant Garde, Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+$book-oblique: 'ITCAvantGardeStd-BkObl',Avant Garde, Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+$book-medium-condense: 'ITCAvantGardeStd-MdCn',Avant Garde, Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+$demi: 'ITCAvantGardeStd-Demi',Avant Garde, Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+$demi-condense: 'ITCAvantGardeStd-DemiCn',Avant Garde, Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+
+// COLOr
+$yellow: #ffb700;
+$green: #b0b601;
+$gray: #b1a69b;
+
+// ELEMENT
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: $book;
+  line-height: 1.3rem;
+  font-size: 0.85rem;
+  padding-bottom: 1rem;
+  color: #333;
+}
+
+@media screen and (min-width: $max-2-width) {
+  p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
